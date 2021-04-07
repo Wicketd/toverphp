@@ -16,11 +16,11 @@ class AppBinary extends AbstractFileGenerator
 
     protected static function getTemplateArgs(): array
     {
-        $composerJson = static::getComposerJson();
+        $packageInfo = static::getPackageInfo();
 
         return [
-            'packageVersion' => $composerJson->version,
-            'phpVersionExpected' => $composerJson->require->php,
+            'packageVersion' => $packageInfo->get('version'),
+            'phpVersionExpected' => $packageInfo->get('require.php'),
         ];
     }
 }
