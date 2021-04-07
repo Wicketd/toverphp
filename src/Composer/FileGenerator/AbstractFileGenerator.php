@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Simple file generator that replaces its template arguments verbatim. Nothing fancy.
+ */
+
 namespace Tover\Composer\FileGenerator;
 
 use Adbar\Dot;

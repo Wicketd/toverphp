@@ -6,7 +6,7 @@ class AppBinary extends AbstractFileGenerator
 {
     protected static function getTemplatePath(): string
     {
-        return 'templates/bin/toverphp.php.tpl';
+        return 'templates/bin/toverphp.php';
     }
 
     protected static function getTargetPath(): string
