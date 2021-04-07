@@ -1,0 +1,23 @@
+{
+    "name": "toverphp/toverphp",
+    "version": "0.1.0",
+    "require": {
+        "php": "^7.4",
+        "nikic/php-parser": "^4.10",
+        "composer/semver": "^3.2",
+        "webmozart/assert": "^1.10"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
+    "scripts": {
+        "generate-files": "Tover\\Composer\\FileGenerator\\AppBinary::generate"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tover\\": "src/"
+        },
+        "exclude-from-classmap": ["src/Composer"]
+    },
+    "bin": "toverphp"
+}

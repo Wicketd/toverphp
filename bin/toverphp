@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * This file is auto-generated.
+ *
+ * @version 0.1.0
+ */
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Composer\Semver\Semver;
+
+if (!Semver::satisfies(PHP_VERSION, '^7.4')) {
+    printf(
+        "ToverPHP requires PHP %s to run, found %s. Exiting.\n",
+        '^7.4',
+        PHP_VERSION
+    );
+    exit(1);
+}
+
+echo "do stuff\n";
