@@ -9,7 +9,7 @@ abstract class AbstractFileGenerator
 {
     private static \stdClass $composerJson;
 
-    public final static function generate(): void
+    final public static function generate(): void
     {
         static::$composerJson = json_decode(file_get_contents(Factory::getComposerFile()));  
 
